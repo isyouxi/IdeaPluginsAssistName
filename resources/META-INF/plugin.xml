@@ -37,5 +37,9 @@
                     text="Hello world"
                     description="Hello world from My"/>
         </group>
+        <action id="helloaction2" class="HelloAction2" text="HelloAction2" description="右键的 hello">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
+        </action>
     </actions>
 </idea-plugin>
