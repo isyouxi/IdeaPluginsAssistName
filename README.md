@@ -36,7 +36,7 @@
  - 有跟文本交互的实现
  - 参考了此网站内的文章:http://blog.csdn.net/huachao1001/article/details/53885981
  - 新建了个Action (HelloAction2),做出了个相应的Demo:
- ![image](src/pic/2.gif)
+    ![image](src/pic/2.gif)
  
 
     
