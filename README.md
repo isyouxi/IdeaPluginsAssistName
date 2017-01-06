@@ -12,9 +12,15 @@
  - 1.安装 Intellij IDEA 开发工具
  - 2.打开 Intellij IDEA , 创建新的工程 'Create New Project'
  - 3.在左侧的选择栏 里 选择 'Intellij Platform Plus' 
-    [右边默认就好,不用选择;
-    同时也注意下右边上部分的 Project SDK ,如果是空的话,点击它旁边的 New ,路径选择 Intellij IDEA 的安装目录,就可以了],点击 'Next'
+    *(右边默认就好,不用选择;
+          同时也注意下右边上部分的 Project SDK ,如果是空的话,点击它旁边的 New ,路径选择 Intellij IDEA 的安装目录,就可以了)*,点击 'Next'
  - 4.填好工程名称 和 目录 点击 'Finish'
  
+ *此部分参考了此篇文章: http://www.jianshu.com/p/3ba18f88ba06* 
+ 
 ##### 开始尝试Demo
-
+ - 先写个 hello 的 demo 吧
+ - 参考了此网站内的文章: http://www.tuicool.com/articles/yeuyIj
+ - 做出了个简单的Demo效果:
+    ![](http://img2.ph.126.net/qwJ3O4I1BrHw9VY1n65JlA==/6631877006257959218.gif)
+    
