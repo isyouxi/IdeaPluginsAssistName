@@ -22,5 +22,5 @@
  - 先写个 hello 的 demo 吧
  - 参考了此网站内的文章: http://www.tuicool.com/articles/yeuyIj
  - 做出了个简单的Demo效果:
-    ![](http://img2.ph.126.net/qwJ3O4I1BrHw9VY1n65JlA==/6631877006257959218.gif)
+    ![image](src/pic/1.gif)
     
