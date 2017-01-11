@@ -19,9 +19,10 @@ public class HelloAction2 extends AnAction {
             return;
 
         SelectionModel selectionModel = editor.getSelectionModel();
-        String selectedText = selectionModel.getSelectedText();
-//        CaretModel caretModel = editor.getCaretModel();
+        CaretModel caretModel = editor.getCaretModel(); //光标
 
+
+        String selectedText = selectionModel.getSelectedText();
         sayHello(selectedText);
     }
 
