@@ -30,16 +30,32 @@
 
     <actions>
         <!-- Add your actions here -->
-        <group id="mygroupid" text="myGroup" description="this my Group">
-            <add-to-group group-id="MainMenu" anchor="first"/>
-            <action class="HelloAction"
-                    id="mhelloid"
-                    text="Hello world"
-                    description="Hello world from My"/>
-        </group>
-        <action id="helloaction2" class="HelloAction2" text="HelloAction2" description="右键的 hello">
+        <!--<group id="mygroupid" text="myGroup" description="this my Group">-->
+        <!--<add-to-group group-id="MainMenu" anchor="first"/>-->
+        <!--<action class="HelloAction"-->
+        <!--id="mhelloid"-->
+        <!--text="Hello world"-->
+        <!--description="Hello world from My"/>-->
+        <!--</group>-->
+
+
+        <!-- <action id="helloaction2" class="HelloAction2" text="HelloAction2" description="右键的 hello">
+             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+             <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
+         </action>-->
+
+
+        <!-- Add your actions here -->
+        <group id="Group_ConverToName" popup="true" text="ConverToName" description="ConverToName Plus">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
-        </action>
+            <!-- <add-to-group group-id="GenerateGroup" anchor="first"/> -->
+            <action class="ConverToName" id="action_convertoname" text="conver to name">
+                <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
+            </action>
+            <action class="ConverToNameSetting" id="action_convertoname_setting" text="setting">
+            </action>
+        </group>
+
+
     </actions>
 </idea-plugin>
