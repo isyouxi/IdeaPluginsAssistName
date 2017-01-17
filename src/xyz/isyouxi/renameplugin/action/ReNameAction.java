@@ -1,3 +1,5 @@
+package xyz.isyouxi.renameplugin.action;
+
 import com.intellij.codeInsight.lookup.LookupElement;
 import com.intellij.codeInsight.lookup.LookupEx;
 import com.intellij.codeInsight.lookup.LookupManager;
@@ -7,9 +9,8 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.CaretModel;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
-import org.jetbrains.annotations.NotNull;
+import xyz.isyouxi.renameplugin.ui.ReNameDialog;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,34 +25,48 @@ public class ReNameAction extends AnAction {
         SelectionModel selectionModel = editor.getSelectionModel();
         CaretModel caretModel = editor.getCaretModel(); //光标
         String selectedText = selectionModel.getSelectedText();
-        List<LookupElement> replaceLookup = new ArrayList<LookupElement>();
 
 
-        replaceLookup.add(new LookupElement() {
-            @NotNull
-            @Override
-            public String getLookupString() {
-                return "text1";
-            }
-        });
+
+        System.out.println("new ReNameDialog");
+
+        ReNameDialog reNameDialog = new ReNameDialog();
 
 
-        replaceLookup.add(new LookupElement() {
-            @NotNull
-            @Override
-            public String getLookupString() {
-                return "text2";
-            }
-        });
 
-        replaceLookup.add(new LookupElement() {
-            @NotNull
-            @Override
-            public String getLookupString() {
-                return "text3";
-            }
-        });
-        doShowDia(editor, replaceLookup);
+
+
+//        reNameDialog.show();
+
+
+//        List<LookupElement> replaceLookup = new ArrayList<LookupElement>();
+//        replaceLookup.add(new LookupElement() {
+//            @NotNull
+//            @Override
+//            public String getLookupString() {
+//                return "text1";
+//            }
+//        });
+//
+//
+//        replaceLookup.add(new LookupElement() {
+//            @NotNull
+//            @Override
+//            public String getLookupString() {
+//                return "text2";
+//            }
+//        });
+//
+//        replaceLookup.add(new LookupElement() {
+//            @NotNull
+//            @Override
+//            public String getLookupString() {
+//                return "text3";
+//            }
+//        });
+//        doShowDia(editor, replaceLookup);
+
+
     }
 
     private void doShowDia(Editor editor, List<LookupElement> replaceLookup) {

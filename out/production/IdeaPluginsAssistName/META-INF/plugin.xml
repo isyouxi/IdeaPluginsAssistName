@@ -37,7 +37,7 @@
                     text="Hello world"
                     description="Hello world from My"/>
         </group>-->
-        <action id="renameaction" class="ReNameAction" text="reName" description="右键的 hello">
+        <action id="renameaction" class="xyz.isyouxi.renameplugin.action.ReNameAction" text="reName" description="右键的 hello">
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt M"/>
         </action>
