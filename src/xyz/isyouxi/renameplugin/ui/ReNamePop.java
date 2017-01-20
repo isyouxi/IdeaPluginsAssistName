@@ -10,25 +10,38 @@ import com.intellij.openapi.project.Project;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.*;
 import java.util.List;
 
 public class ReNamePop extends JDialog {
+
+
     private JPanel contentPane;
-    private JButton buttonCancel;
-    private JList list1;
+    private JButton sureButton;
+    private JList suggestList;
+    private JButton reverButton;
+    private JLabel queryWordLabel;
+    private JLabel translationLabel;
+    private JLabel errorMessageLabel;
+    private JLabel suggestLabel;
+    private JLabel propertyLabel;
     private Editor editor;
     private List<String> datas;
+
 
     public ReNamePop(Editor editor, Project project) {
 
         this.editor = editor;
+        setUndecorated(true);
         setContentPane(contentPane);
-        setModal(true);
+        //setModal(true);
 
-        setSize(400, 400);
+        setSize(400, 200);
 
-        buttonCancel.addActionListener(new ActionListener() {
+        setLocation(100, 100);
+
+        sureButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
@@ -50,14 +63,14 @@ public class ReNamePop extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 
 
-        list1.addListSelectionListener(new ListSelectionListener() {
+        suggestList.addListSelectionListener(new ListSelectionListener() {
             @Override
             public void valueChanged(ListSelectionEvent e) {
 
 
                 if (e.getValueIsAdjusting()) return;
 
-                String selectedItem = (String) list1.getSelectedValue();
+                String selectedItem = (String) suggestList.getSelectedValue();
 
 
                 SelectionModel selectionModel = editor.getSelectionModel();
@@ -105,14 +118,18 @@ public class ReNamePop extends JDialog {
 //        System.exit(0);
     }
 
+
     public void setMyDatas(List<String> mList) {
         this.datas = mList;
-        DefaultListModel listModel = new DefaultListModel();
 
-        for (String ss :
-                mList) {
-            listModel.addElement(ss);
+
+        if (this.datas == null) {
+        } else {
+            DefaultListModel listModel = new DefaultListModel();
+            for (String ss : this.datas) {
+                listModel.addElement(ss);
+            }
+            suggestList.setListData(listModel.toArray());
         }
-        list1.setListData(listModel.toArray());
     }
 }

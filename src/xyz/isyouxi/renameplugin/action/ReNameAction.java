@@ -10,10 +10,13 @@ import com.intellij.openapi.editor.CaretModel;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import com.intellij.openapi.project.Project;
+import org.intellij.plugins.relaxNG.compact.psi.util.RenameUtil;
+import org.jetbrains.annotations.NotNull;
 import xyz.isyouxi.renameplugin.model.Translate;
 import xyz.isyouxi.renameplugin.model.WebBean;
 import xyz.isyouxi.renameplugin.ui.ReNamePop;
 import xyz.isyouxi.renameplugin.utils.QueryCallBack;
+import xyz.isyouxi.renameplugin.utils.ReNameUtils;
 import xyz.isyouxi.renameplugin.utils.YouDaoApiUtils;
 
 import java.util.ArrayList;
@@ -40,34 +43,9 @@ public class ReNameAction extends AnAction {
                 System.out.println("  获取网络翻译结果成功  ");
                 System.out.println("-------- Translation --------");
 
-                List<String> mList = new ArrayList<>();
+                List<String> mList = ReNameUtils.generateReNames(result);
 
-                mList.add("-------- Translation --------");
-
-                for (String translation :
-                        result.getTranslation()) {
-
-                    mList.add(translation);
-                    System.out.println(translation);
-                }
-                System.out.println("-------- webBean --------");
-
-
-                mList.add("-------- webBean --------");
-
-                for (WebBean webBean :
-                        result.getWeb()) {
-                    System.out.println(webBean.getKey() + "::");
-                    for (String s :
-                            webBean.getValue()) {
-                        System.out.println(s);
-                        mList.add(s);
-                    }
-                }
-
-                System.out.println("-------- end --------");
-
-                ReNamePop reNameDialog = new ReNamePop(editor,project);
+                ReNamePop reNameDialog = new ReNamePop(editor, project);
                 reNameDialog.setMyDatas(mList);
                 reNameDialog.setVisible(true);
 
@@ -111,6 +89,8 @@ public class ReNameAction extends AnAction {
 
 
     }
+
+
 
     private void doShowDia(Editor editor, List<LookupElement> replaceLookup) {
         LookupElement[] items = replaceLookup.toArray(new LookupElement[replaceLookup.size()]);
