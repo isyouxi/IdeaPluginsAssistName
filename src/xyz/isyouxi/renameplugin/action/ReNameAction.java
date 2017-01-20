@@ -9,8 +9,14 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.CaretModel;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
-import xyz.isyouxi.renameplugin.ui.ReNameDialog;
+import com.intellij.openapi.project.Project;
+import xyz.isyouxi.renameplugin.model.Translate;
+import xyz.isyouxi.renameplugin.model.WebBean;
+import xyz.isyouxi.renameplugin.ui.ReNamePop;
+import xyz.isyouxi.renameplugin.utils.QueryCallBack;
+import xyz.isyouxi.renameplugin.utils.YouDaoApiUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,6 +26,7 @@ public class ReNameAction extends AnAction {
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
         Editor editor = anActionEvent.getData(PlatformDataKeys.EDITOR);
+        Project project = anActionEvent.getData(PlatformDataKeys.PROJECT);
         if (editor == null)
             return;
         SelectionModel selectionModel = editor.getSelectionModel();
@@ -27,16 +34,52 @@ public class ReNameAction extends AnAction {
         String selectedText = selectionModel.getSelectedText();
 
 
+        QueryCallBack mCallBack = new QueryCallBack<Translate>() {
+            @Override
+            public void success(Translate result) {
+                System.out.println("  获取网络翻译结果成功  ");
+                System.out.println("-------- Translation --------");
 
-        System.out.println("new ReNameDialog");
+                List<String> mList = new ArrayList<>();
 
-        ReNameDialog reNameDialog = new ReNameDialog();
+                mList.add("-------- Translation --------");
+
+                for (String translation :
+                        result.getTranslation()) {
+
+                    mList.add(translation);
+                    System.out.println(translation);
+                }
+                System.out.println("-------- webBean --------");
 
 
+                mList.add("-------- webBean --------");
 
+                for (WebBean webBean :
+                        result.getWeb()) {
+                    System.out.println(webBean.getKey() + "::");
+                    for (String s :
+                            webBean.getValue()) {
+                        System.out.println(s);
+                        mList.add(s);
+                    }
+                }
 
+                System.out.println("-------- end --------");
 
-//        reNameDialog.show();
+                ReNamePop reNameDialog = new ReNamePop(editor,project);
+                reNameDialog.setMyDatas(mList);
+                reNameDialog.setVisible(true);
+
+            }
+
+            @Override
+            public void fail(String errorcode, String str, Translate result) {
+
+            }
+        };
+
+        YouDaoApiUtils.toQuery(selectedText, mCallBack);
 
 
 //        List<LookupElement> replaceLookup = new ArrayList<LookupElement>();

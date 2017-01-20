@@ -49,5 +49,11 @@
     
  - <strong>重点推荐项目:</strong>https://github.com/YiiGuxing/TranslationPlugin
  [在这个项目里学到了很多,比如 LookupManager 怎么搜索都没找到什么资料,还是看到这个项目有写才知道的这个,然后自己试着写]
+ 
+#### 完成上面的想法
+   于是根据查找完成一个了列表对话框 ,然后具有翻译功能.然后再先显示大概的效果.再进行下一步:
+   
+  ![image](src/pic/4.gif)
+   
 
     
