@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef1a790d-5b15-4c7e-b0f8-b1eefc668ca3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/gson-2.8.0-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_0_sources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/okhttp_3_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/okhttp_3_5_0_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/model/BasicBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/model/Translate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/model/WebBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/ui/ReNamePop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/utils/MyHttpUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/utils/QueryCallBack.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/utils/YouDaoApiUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/ui/ReNameDialog$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/ui/ReNameDialog$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/ui/ReNameDialog$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/ui/ReNameDialog$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/ui/ReNameDialog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/ui/ReNameDialog.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/action/ReNameAction.class" afterPath="$PROJECT_DIR$/out/production/IdeaPluginsAssistName/xyz/isyouxi/renameplugin/action/ReNameAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IdeaPluginsAssistName.iml" afterPath="$PROJECT_DIR$/IdeaPluginsAssistName.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/action/ReNameAction.java" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/action/ReNameAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/ui/ReNameDialog.form" afterPath="$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/ui/ReNamePop.form" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,16 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="654">
-                <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+              <first_editor relative-caret-position="437">
+                <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
                 <folding />
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pic/4.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -147,7 +130,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyHttpUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyHttpUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/utils/MyHttpUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="627">
@@ -156,29 +139,6 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#666#667#0" expanded="true" />
                 <element signature="e#713#714#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileDescriptor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/FileDescriptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="95" column="39" lean-forward="false" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#6937#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#1373#1374#0" expanded="false" />
-                <element signature="e#1424#1425#0" expanded="false" />
-                <element signature="e#1478#1479#0" expanded="false" />
-                <element signature="e#1531#1532#0" expanded="false" />
-                <element signature="e#1605#1606#0" expanded="false" />
-                <element signature="e#1664#1665#0" expanded="false" />
-                <element signature="e#1725#1726#0" expanded="false" />
-                <element signature="e#1782#1783#0" expanded="false" />
-                <element signature="e#2994#2995#0" expanded="false" />
-                <element signature="e#3047#3048#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -789,7 +749,7 @@
       <workItem from="1484530698693" duration="19372000" />
       <workItem from="1484704346262" duration="2460000" />
       <workItem from="1484796886493" duration="13683000" />
-      <workItem from="1484876626986" duration="9266000" />
+      <workItem from="1484876626986" duration="10026000" />
     </task>
     <task id="LOCAL-00001" summary="first commit - create project">
       <created>1483672733252</created>
@@ -861,11 +821,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484120941156</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="demo4">
+      <created>1484896927170</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1484896927170</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66376000" />
+    <option name="totallyTimeSpent" value="67136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -880,7 +847,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5097614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23535791" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19522777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11171366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -913,7 +880,8 @@
     <MESSAGE value="hello demo" />
     <MESSAGE value="hello demo2" />
     <MESSAGE value="demo3" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo3" />
+    <MESSAGE value="demo4" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -924,14 +892,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1182,18 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/utils/MyHttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/model/BasicBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -1311,11 +1259,28 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="654">
-            <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <first_editor relative-caret-position="437">
+            <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pic/4.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xyz/isyouxi/renameplugin/utils/MyHttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
